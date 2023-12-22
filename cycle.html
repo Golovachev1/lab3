@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Реализация вычислительного процесса</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script>
+  let price = Number(prompt('Введите цену 1 кг конфет'));
+  let result = 0
+  if (price % 1 == 0 || price < 0) {
+    document.write('Цена должна быть вещественным и положительным числом!')
+  } else {
+    for (let i = 1; i < 11; i++) {
+    result = price * i
+    document.write('Цена ', i, ' кг конфет: ', result, " руб", "<br>")
+  }
+}
+  </script>
+</body>
+</html>
